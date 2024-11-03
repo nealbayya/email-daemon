@@ -11,7 +11,7 @@ SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
 EMAIL_ADDRESS = os.environ.get('EMAIL_ADDRESS')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 TO_ADDRESS = os.environ.get('TO_ADDRESS')
-SUBJECT = 'Weekly report'
+SUBJECT = 'Test email'
 BODY = 'TODO'
 
 
