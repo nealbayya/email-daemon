@@ -1,5 +1,8 @@
 # email-daemon
 
+## About
+A small Python script template which can be used to send yourself an email. Use crontab or systemd (for linux distributions) make the process recur.
+ 
 ## Setup Steps
 
 1. Create .env config with the following format
