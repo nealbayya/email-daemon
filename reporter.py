@@ -6,11 +6,11 @@ from email import encoders
 import os
 
 # Email configuration
-SMTP_SERVER = 'smtp.your_email_provider.com'
-SMTP_PORT = 587
-EMAIL_ADDRESS = 'your_email@example.com'
-EMAIL_PASSWORD = 'your_password'
-TO_ADDRESS = 'recipient@example.com'
+SMTP_SERVER = os.environ.get('SMTP_SERVER')
+SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
+EMAIL_ADDRESS = os.environ.get('EMAIL_ADDRESS')
+EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+TO_ADDRESS = os.environ.get('TO_ADDRESS')
 SUBJECT = 'Daily Report'
 BODY = 'Please find attached the daily report.'
 
